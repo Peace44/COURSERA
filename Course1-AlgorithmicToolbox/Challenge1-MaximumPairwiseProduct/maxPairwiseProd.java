@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 
-class maxPairwiseProd
+class MaxPairwiseProd
 {
     static long getMaxPairwiseProd(int[] numbers)
     {
