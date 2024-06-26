@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 
 
-/*
- * Computes the n-th fibonacci number with 0 <= n <= 45 
- */
 class Fibonacci
 {
+    /*
+    * Computes the n-th fibonacci number with 0 <= n <= 45 
+    */
     static int fibonacci(int n)
     {
         if (n <= 0) return 0;
