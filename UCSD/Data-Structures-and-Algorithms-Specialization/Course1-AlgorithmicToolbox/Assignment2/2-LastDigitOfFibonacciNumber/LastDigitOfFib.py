@@ -2,14 +2,14 @@ def last_digit_of_fibonacci(n):
     if n <= 0: 
         return 0
     else:
+        fib0 = 0
+        fib1 = 1
         fib = 1
-        fib1 = 0
-        fib2 = 1
-
+        
         for i in range(2, n+1):
-            fib = (fib1 + fib2) % 10
-            fib1 = fib2
-            fib2 = fib
+            fib = (fib0 + fib1) % 10
+            fib0 = fib1
+            fib1 = fib
         
         return fib
 

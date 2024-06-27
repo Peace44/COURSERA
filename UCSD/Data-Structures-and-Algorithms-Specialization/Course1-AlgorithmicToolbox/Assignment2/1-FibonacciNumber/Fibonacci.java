@@ -11,12 +11,12 @@ class Fibonacci
     {
         if (n <= 0) return 0;
         else {
-            int fib = 1, fib1 = 0, fib2 = 1;
+            int fib0 = 0, fib1 = 1, fib = 1;
 
             for (int i = 2; i <= n; i++) {
-                fib = fib1 + fib2;
-                fib1 = fib2;
-                fib2 = fib;
+                fib = fib0 + fib1;
+                fib0 = fib1;
+                fib1 = fib;
             }
 
             return fib;
