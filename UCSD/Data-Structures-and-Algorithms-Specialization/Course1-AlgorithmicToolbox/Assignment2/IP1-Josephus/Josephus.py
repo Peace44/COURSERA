@@ -28,6 +28,7 @@ def recursive_josephus(n, k):
 
 if __name__ == "__main__":
     n, k = map(int, input().split())
-    print(greedy_josephus(n, k))
     sys.setrecursionlimit(n+1)
     print(recursive_josephus(n, k))
+    print(greedy_josephus(n, k))
+    
