@@ -16,6 +16,7 @@ def greedy_josephus(n, k):
     return next(survivor for survivor in rebels if survivor >= 0)
 
 
+
 # Python has a default max recursion depth of 1000.
 # The limit can be increased with sys.setrecursionlimit(n)
 def recursive_josephus(n, k):
