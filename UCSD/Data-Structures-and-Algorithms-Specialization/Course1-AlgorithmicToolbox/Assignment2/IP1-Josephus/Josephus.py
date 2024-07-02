@@ -1,3 +1,7 @@
+import sys
+
+
+
 def greedy_josephus(n, k):
     rebels = [i for i in range(n)]
     nber_of_remaining_rebels = n
@@ -12,7 +16,8 @@ def greedy_josephus(n, k):
     return next(survivor for survivor in rebels if survivor >= 0)
 
 
-
+# Python has a default max recursion depth of 1000.
+# The limit can be increased with sys.setrecursionlimit(n)
 def recursive_josephus(n, k):
     if n == 1:
         return 0
@@ -24,4 +29,5 @@ def recursive_josephus(n, k):
 if __name__ == "__main__":
     n, k = map(int, input().split())
     print(greedy_josephus(n, k))
+    sys.setrecursionlimit(n+1)
     print(recursive_josephus(n, k))
